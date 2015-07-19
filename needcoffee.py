@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+import sys
+
 
 def caffeinate(volumeOfWater=10):
     # Find the weight in grams of coffee needed for a given volume of water
@@ -23,9 +25,16 @@ def getMultipleQuantities(volumes):
     for volume in volumes:
         print(caffeinate(volume))
 
-# Step 2:
-# Make the program accept values in the terminal and output the results
-#   if there are command-line arguments, use the volume value(s) provided
-#   if there are no arguments, use defaults of 8, 10 and 12 fl. oz
+def main():
+    # Make the program accept values in the terminal and output the results
 
-getMultipleQuantities([8, 10, 12])
+    # if there are command-line arguments, use the volume value(s) provided
+    if len(sys.argv) > 1:
+        volumes = sys.argv[1:]
+    else:
+        volumes = [8, 10, 12]
+
+    # if there are no arguments, use defaults of 8, 10 and 12 fl. oz
+    getMultipleQuantities(volumes)
+
+main()
