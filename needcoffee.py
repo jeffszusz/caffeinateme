@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-def caffeinate(volumeOfWater):
+def caffeinate(volumeOfWater=10):
     # Step 1:
     # Find the weight in grams of coffee needed for a given volume of water
 
@@ -10,9 +10,9 @@ def caffeinate(volumeOfWater):
     # A weight ratio of 1:16 coffee to water makes a perfect cup
     weightOfCoffee = weightOfWater / 16.0 # grams
 
-    print(weightOfCoffee)
+    return weightOfCoffee
 
-caffeinate(10)
+print(caffeinate())
 
 # Step 2:
 # Make the program accept values in the terminal and output the results
