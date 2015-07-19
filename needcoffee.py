@@ -25,16 +25,19 @@ def getMultipleQuantities(volumes):
     for volume in volumes:
         print(caffeinate(volume))
 
+
 def main():
     # Make the program accept values in the terminal and output the results
 
-    # if there are command-line arguments, use the volume value(s) provided
     if len(sys.argv) > 1:
-        volumes = sys.argv[1:]
+        # if there are command-line arguments, use the volume value(s) provided
+        volumes = []
+        for value in sys.argv[1:]:
+            volumes.append(int(value))
     else:
+        # if there are no arguments, use defaults of 8, 10 and 12 fl. oz
         volumes = [8, 10, 12]
 
-    # if there are no arguments, use defaults of 8, 10 and 12 fl. oz
     getMultipleQuantities(volumes)
 
 main()
