@@ -2,7 +2,6 @@
 
 
 def caffeinate(volumeOfWater=10):
-    # Step 1:
     # Find the weight in grams of coffee needed for a given volume of water
 
     # 1 fl. oz of water weighs approx 28 grams
@@ -19,9 +18,14 @@ def formatResults(waterVolume, coffeeWeight):
     message = message.format(waterVolume, coffeeWeight)
     return message
 
-print(caffeinate())
+
+def getMultipleQuantities(volumes):
+    for volume in volumes:
+        print(caffeinate(volume))
 
 # Step 2:
 # Make the program accept values in the terminal and output the results
 #   if there are command-line arguments, use the volume value(s) provided
 #   if there are no arguments, use defaults of 8, 10 and 12 fl. oz
+
+getMultipleQuantities([8, 10, 12])
