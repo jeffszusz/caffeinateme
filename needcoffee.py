@@ -1,16 +1,18 @@
 #!/usr/bin/python
 
-# Step 1:
-# Find the weight in grams of coffee needed for a given volume of water
-volumeOfWater = 10
+def caffeinate(volumeOfWater):
+    # Step 1:
+    # Find the weight in grams of coffee needed for a given volume of water
 
-# 1 fl. oz of water weighs approx 28 grams
-weightOfWater = volumeOfWater * 28 # grams
+    # 1 fl. oz of water weighs approx 28 grams
+    weightOfWater = volumeOfWater * 28 # grams
 
-# A weight ratio of 1:16 coffee to water makes a perfect cup
-weightOfCoffee = weightOfWater / 16.0 # grams
+    # A weight ratio of 1:16 coffee to water makes a perfect cup
+    weightOfCoffee = weightOfWater / 16.0 # grams
 
-print(weightOfCoffee)
+    print(weightOfCoffee)
+
+caffeinate(10)
 
 # Step 2:
 # Make the program accept values in the terminal and output the results
