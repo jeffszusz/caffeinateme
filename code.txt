@@ -1,0 +1,55 @@
+Sample code ideas...
+
+Numbers
+-------
+
+>>> 3
+3
+>>> 8
+8
+
+Math
+----
+
+>>> 1+1
+2
+>>> 2+5
+7
+>>> 3*3
+9
+>>> 2 + 2 * 10
+22
+
+Text (Strings)
+--------------
+
+>>> 'Hello, World!'
+'Hello, World!'
+
+>>> 'Hello, ' + 'World!'
+'Hello, World!'
+
+>>> 'Hello'*10
+'HelloHelloHelloHelloHelloHelloHelloHelloHelloHello'
+
+Variables
+---------
+
+>>> name = 'Jeff'
+>>> name
+'Jeff'
+
+>>> age = 29
+>>> age
+29
+
+>>> 'Hello, my name is ' + name
+>>> 'Hello, my name is ' + name + ' and I am ' + age
+traceback...
+
+Functions
+---------
+>>> 'Hello, my name is ' + name + ' and I am ' + str(age)
+>>> 'Hello, my name is {} and I am {}'.format(name, age)
+
+
